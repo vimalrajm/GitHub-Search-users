@@ -6,7 +6,7 @@ class Github {
     this.repos_count = 5;
     this.repos_sort = 'created: asc';
   }
-
+  
   async userData() {
     const response = await fetch(`https://api.github.com/users/${this.userName}?client_id=${this.client_id}&client_secret=${this.client_secret}`);
     const resData = await response.json();

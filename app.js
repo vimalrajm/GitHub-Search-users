@@ -6,7 +6,7 @@ function getUser(e) {
   const user = e.target.value;
   setInterval(display(user),2000);
 }
-
+ 
 function display(user) {
   viewUdata.innerHTML = `<div class="columns is-centered">
       <div class="column is-9-desktop">

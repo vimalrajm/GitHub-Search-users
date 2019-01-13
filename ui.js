@@ -58,9 +58,9 @@ class UI {
                         </tr>
                         <tr>
                             <td>Member-since: ${this.userData.created_at}</td>
-                          </tr>
+                          </tr> 
                   </table>
-                </div>
+                </div> 
               </figure>
             </article>
           </div>
