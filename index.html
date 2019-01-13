@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>GitHub Finder</title>
+</head>
+<body>
+  <div class="hero navbar is-fixed-top" style="background-color: hsl(293, 81%, 38%)">
+    <div class="hero-body">
+      <div class="title has-text-centered has-text-white">GitHub Finder</div> 
+    </div>
+  </div>
+
+  <section class="section has-background-white is-medium">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-9-desktop">
+          <div class="box">
+            <div class="field">
+              <label class="label is-size-4">Search Github Users</label>
+            </div>
+            <div class="field">
+              <label class="has-text-grey">Enter a username to fetch a users profile info  and repos</label>
+            </div>
+            <div class="field">
+                <div class="control has-icons-left">
+                  <input type="text" class="input" id="searchtxt" placeholder="Github Username...">
+                  <span class="icon is-small i-left has-text-danger">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="viewUdata">
+
+    </div>
+  </section>
+  <section class="section has-background-light">
+    <div>
+        <footer class="has-text-centered is-size-7">Github Finder &copy;</footer>
+    </div>
+  </section>
+  <script src="github.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+</body>
+<style>
+    .m-btm {
+    margin-top: 20px;
+    }
+
+    .hero-body {
+      ;
+    }
+</style>
+</html>
