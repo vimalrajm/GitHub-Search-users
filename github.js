@@ -1,8 +1,12 @@
 class Github {
   constructor(userName) {
     this.userName = userName;
-    this.client_id = 'dcaf3b308d8b209c961b';
-    this.client_secret = '8e29cdb03fc2f3923f2dc7d3cb29ed91080b5922';
+    //login to git hub
+    //1.click on user profile and navigate setting
+    //2.click on developer setting
+    //3.click on github user name and copy client id and client secret
+    this.client_id = '';//paste here inside quotes
+    this.client_secret = '';//paste here inside quotes
     this.repos_count = 5;
     this.repos_sort = 'created: asc';
   }
