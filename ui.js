@@ -6,7 +6,6 @@ class UI {
   }
 
   async addDetailsToUi() {
-    console.log(this.userData);
     if(this.userData.message === "Not Found") {
       this.containerD.innerHTML = await `<div class="columns is-centered ">
       <div class="column is-9-desktop">
@@ -17,7 +16,6 @@ class UI {
       let repos = ``;
       this.repoData.forEach(data=>{
         if(this.repoData.length !== 0) {
-        console.log(data);
         repos += `<div class="column"><a style="display: inline-block;width:200px;" href="${data.html_url}" target="new">
         <span>${data.name}<span></a>
             <button class="button is-link" style="display: inline-block;width:150px;">Stars: ${data.stargazers_count}</button>
@@ -34,7 +32,7 @@ class UI {
             <article class="media">
               <figure class="media-left">
                 <div class="image">
-                  <img src="${this.userData.avatar_url}" alt="profile pic">
+                  <img src="${this.userData.avatar_url}" style="width:300px;height:300px" alt="profile pic">
                   <a href="${this.userData.html_url}">
                   <button class="m-btm button box is-link">
                   View profile</button></a>

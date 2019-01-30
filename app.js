@@ -4,7 +4,7 @@ const viewUdata = document.getElementById('viewUdata');
 
 function getUser(e) {
   const user = e.target.value;
-  setInterval(display(user),2000);
+  setInterval(display(user.trim()),2000);
 }
  
 function display(user) {
@@ -13,8 +13,9 @@ function display(user) {
         <div class="box">
           <div class="field"><label class="label">Loading...</label>
           </div><div></div></div>`;
-  if(user.trim() !== '') {
-    const github = new Github(user.trim());
+  if(user !== '') {
+    const github = new Github(user);
+    console.log(github)
     github.userData().then((res)=>{
       const uiJs = new UI(res.resData,res.repData,viewUdata);
       uiJs.addDetailsToUi();
